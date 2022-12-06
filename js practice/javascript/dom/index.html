@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOm</title>
+</head>
+<body>
+    <button class="button_su" onclick = "goBack()">Go Back</button>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid sed minima praesentium non nisi unde cum sequi quas mollitia nesciunt inventore ipsam maiores, repellat eveniet ex perspiciatis necessitatibus, reiciendis quos.</p>
+    
+    <!-- <script>
+        function goBack(){
+            window.history.back();
+        }
+    </script> -->
+    <script>
+
+        function goBack(){
+            
+            alert(location.href);
+            if(confirm("want to visit site")){
+                location.href="https://www.youtube.com/watch?v=KGkiIBTq0y0&t=1s";
+            }
+        }
+    </script>
+    </body>
+</html>

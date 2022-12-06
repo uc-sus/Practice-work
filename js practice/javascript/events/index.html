@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .main{
+            width:100vw;
+            height:50vh;
+            display:grid;
+            place-items:center;
+            color:rgb(10, 9, 8);
+            text-align: center;
+            ;
+
+        }
+        .child1{
+            /* border:2px solid red; */
+            padding:50px;
+            margin:30px;
+            background:yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Different events types in js</h1>
+        <div class="child1">
+        <a href="" class="btn" onclick="alert('hello i am here')"><span>Simple Inline alert()</span></a>
+        </div>
+        <div class="child1">
+        <a href="" class="btn" onclick="fun()"><span>By Calling a function()</span></a>
+        </div>
+        <div class="child1">
+        <a href="" class="btn"id="thirdWay"><span>Inline event</span></a>
+        </div>
+        <div class="child1">
+        <a href="" class="btn" id ="fourWay"><span>event listner</span></a>
+        </div>
+    </div>
+
+
+
+    <script>
+        const fun =()=>{
+            alert("hello i m a alert");
+        };
+
+        const thirdWay = document.getElementById('thirdWay');
+
+        thirdWay.onclick = function() {
+            alert('most common way of writing a function again')
+        }
+
+        // 4th way
+        const fourWay= document.querySelector('#fourWay');
+        fourWay.addEventListener('click',()=>{
+            alert('i love this type of function');
+        })
+        
+    </script>
+    
+</body>
+</html>
+
